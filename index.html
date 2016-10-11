@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> DKJ Makeup </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+       
+     
+    </head>
+    <body>
+
+        <div class="container-fluid">
+            <div class="header">
+                <div class="12"></div>
+            </div>
+            
+    <a class="scrollToTop" ><br> </a>
+   
+   
+   
+    <script>   
+    $(document).ready(function(){
+	
+	
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
+});
+       
+    </script>
+           
+  
+            <div class="navbar navbar" >
+
+<ul id="menu">
+     
+    <div class="col span1_of_3">
+    
+      <li><a href="">Eye Shadow Products</a>
+        <ul>
+        <li><a href= "https://www.maccosmetics.com/products/13840/Products/Makeup/Eyes/Shadow">MAC</a></li>
+        <li><a href="http://inglot.ie/eyes/eyeshadow.html">INGLOT</a></li>
+        <li><a href="http://www.urbandecay.com/eyes/eyeshadow">Urban Decay</a></li>
+        </ul>
+      </li>
+    </div>
+         <div class="col span2_of_3">
+           
+            <li><a href="">Mascara Products</a>
+        <ul>
+        <li><a href="https://www.maccosmetics.com/products/13839/Products/Makeup/Eyes/Mascara">MAC</a></li>
+        <li><a href="http://inglot.ie/eyes/mascara.html">INGLOT</a></li>
+        <li><a href="http://www.urbandecay.com/eyes/mascara">Urban Decay</a></li>
+       
+        </ul>
+      </li>
+            </div>
+                <div class="col span3_of_3">
+                
+                <li><a href="" >Eye Liner Products</a>
+        <ul>
+        <li><a href="https://www.maccosmetics.com/products/13838/Products/Makeup/Eyes/Liner">MAC</a></li>
+        <li><a href="http://inglot.ie/eyes/eyeshadow.html">INGLOT</a></li>
+        <li><a href="http://www.urbandecay.com/eyes/eyeliner">Urban Decay</a></li>
+        </ul>
+      </li>
+    
+                </div>
+           
+          </ul>
+       </div>
+      
+             
+            <div class= "main">
+                <div class="col span1_of_2">
+                    
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+
+<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #330033;
+    border:  1px solid white;
+    color:white;
+    font-family:Arial;
+    font-size:18px;
+    text-shadow:1px;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+
+<div id="flip" >Click Me!</div>
+<div id="panel">Welcome to our Website</div>
+
+                   <!-- <button type="button" onclick="loadXMLDoc()">Eye Beauty Products</button>
+                    <br><br>
+                    <table id="demo"></table>
+
+                    <script>
+                        function loadXMLDoc() {
+                             var xmlhttp = new XMLHttpRequest();
+                             xmlhttp.onreadystatechange = function() {
+                                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                                     myFunction(xmlhttp);
+                                 }
+                             };
+                             xmlhttp.open("GET", "makeup.xml", true);
+                             xmlhttp.send();
+                         }
+                        function myFunction(xml) {
+                        var i;
+                        var xmlDoc = xml.responseXML;
+                        var table="<tr><th>Artist</th><th>Title</th></tr>";
+                        var x = xmlDoc.getElementsByTagName("products");
+                        for (i = 0; i <x.length; i++) { 
+                            table += "<tr><td>" +
+                            x[i].getElementsByTagName("brand")[0].childNodes[0].nodeValue +
+                            "</td><td>" +
+                            x[i].getElementsByTagName("prange")[0].childNodes[0].nodeValue +
+                            "</td></tr>";
+                            x[i].getElementsByTagName("location1")[0].childNodes[0].nodeValue +
+                            "</td></tr>";
+                            x[i].getElementsByTagName("location2")[0].childNodes[0].nodeValue +
+                            "</td></tr>";
+                            x[i].getElementsByTagName("location3")[0].childNodes[0].nodeValue +
+                            "</td></tr>";
+                        }
+                        document.getElementById("demo").innerHTML = table;
+                        }
+                    </script>//-->
+                
+                
+                </div>
+                <div class="col span2_of_2"></div>
+         
+            
+            <div class="comment">
+               
+                <div class="col com1_of_2">
+                    
+<script>
+        $(document).ready(function(){
+    $("input").focus(function(){
+        $(this).css("background-color", "#cccccc");
+    });
+    $("input").blur(function(){
+        $(this).css("background-color", "#ffffff");
+    });
+});
+</script>
+
+
+<script type="text/javascript">
+   function myalert() {
+    var x = document.forms["myForm"]["nameBox"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        
+    }
+}
+         
+</script> 
+                   
+    <h2>Why not comment on this Website</h2>
+    <form action="comments.php" method="post" id="myForm">
+               <h3>Name:</h3> 
+                <br>
+                <input type="text" name="nameBox" size ="10"/>
+                   
+                    <br>
+                    <h3>Add comment:</h3>
+                    <br>
+                    <textarea rows="3" cols="40" name="textarea" text-align="center">
+                        
+                    </textarea>
+                    <br>
+                  
+                    <input type="submit" onClick="myalert()" />
+            </form>
+                   
+                
+                
+                
+                <div class="com2_of_2">
+              
+                   <h3>User feedback ......</h3>
+                   <div class="comment-list">
+                       <ul class ="comments-holder-ul">
+                           <li class ="comment-holder" id="_1">
+                              
+                              <div class="comment-body">
+                               <h3 class="username-field">
+                                   jade byrne
+                                </h3>
+                                
+                                <div class="comment-text">
+                                    peoples comments here
+                                    
+                                    <div class ="comment-button-holder">
+                                      <ul>
+                                          <li class="delete-btn">X</li> 
+                                        </ul>
+                                    </div>
+                                   </div>
+                            
+                            <li class ="comment-holder" id="_1">
+                               <ul class ="comments-holder-ul">
+                           <li class ="comment-holder" id="_1"></il>
+                              </ul>
+                              <div class="comment-body">
+                              
+                              
+                               <h3 class="username-field">
+                                   jade byrne
+                                </h3>
+                        
+                                <div class="comment-text">
+                                    
+                                    
+                                    Lorem Ipsum is simply dummy text of 
+                                    the printing and typesetting industry.
+                                    Lorem Ipsum has been the industry's
+                                    standard dummy text ever since the 1500s
+                                    , when an unknown printer took a galley 
+                                    of type and scrambled it to make a type 
+                                    specimen book. It has survived not only 
+                                    five centuries, but also the leap into
+                                    electronic typesetting, remaining essentially
+                                    unchanged.
+                                    </div>
+                                    <div class="comment-text">
+                                    peoples comments here
+                                    
+                                    <div class ="comment-button-holder">
+                                      <ul>
+                                          <li class="delete-btn">X</li> 
+                                        </ul>
+                                    </div>
+                                    
+                                       </ul> 
+                            
+                        
+                               
+               <a href="https://wad-pro-raffriff.c9users.io/rss.xml">
+                <img src="http://www.w3schools.com/xml/pic_rss.gif" width="36" height="14"/>
+                </a>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+                 </div>
+             </div> 
+           </div>
+        </div>    
+    </body>
+<!--jade byrne :x14404242
+David Donovan :x14111021
+Karolina Laptas :x14446332 //-->
+</html>
